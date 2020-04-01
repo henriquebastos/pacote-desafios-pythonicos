@@ -1,7 +1,7 @@
 """
 01. donuts
 
-Dado um contator inteiro do numero de donuts, retorne uma string
+Dado um contador inteiro do numero de donuts, retorne uma string
 com o formato 'Number of donuts: <count>' onde <count> é o numero
 recebido. Entretanto, se o contador for 10 ou mais, use a palavra 'many'
 ao invés do contador.

@@ -1,7 +1,7 @@
 """
 05. verbing
 
-Dada uma string, se seu tamanha for pelo menos 3,
+Dada uma string, se seu tamanho for pelo menos 3,
 adicione 'ing' no seu fim, a menos que a string
 já termine com 'ing', nesse caso adicione 'ly'.
 

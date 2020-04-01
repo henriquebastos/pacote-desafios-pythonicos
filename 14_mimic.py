@@ -1,27 +1,42 @@
 """
-Leia o arquivo especificado via linha de comando.
-Faça um split() no espaço em branco para obter todas as palavras
-no arquivo, em vez de ler o arquivo linha a linha, é mais facil obter
-uma string gigante e fazer o split uma vez.
+14. mimic
 
-Crie um dicionario "imitador" que mapeia cada palavra que aparece no arquivo
-com a lista de todas as palavras que seguem imediatamente essa palavra no
-arquivo. A lista de palavras pode estar em qualquer ordem, e deve incluir
-duplicatas. Por exemplo, a chave 'and' pode ter a listagem
-["then","best","then","after", ...] listando todas as palavras que 
-vieram depois de 'and' no texto de entrada. Diremos que a string vazia 
-é o que vem antes a primeira palavra no arquivo.
+Neste desafio você vai fazer um gerador de lero-lero.
+
+É um programa que lê um arquivo, armazena a relação entre as palavras e
+então gera um novo texto respeitando essas relações para imitar um
+escritor de verdade.
+
+Para isso você precisa:
+
+A. Abrir o arquivo especificado via linha de comando.
+
+B. Ler o conteúdo e separar as palavras obtendo uma lista de palavras.
+
+C. Criar um dicionário de "imitação".
+
+Nesse dicionário a chave será uma palavra e o valor será uma lista
+contendo as palavras que aparecem no texto após a palavra usada na chave.
+
+Por exemplo, suponha um arquivo com o conteúdo: A B C B A
+
+O dicionário de imitação deve considerar que:
+* a chave A contém uma lista com a palavra B
+* a chave B contém uma lista com as palavras C e A
+* a chave C contém uma lista com a palavra B
+
+Além disso precisamos considerar que:
+* a chave '' contém uma lista com a primeira palavra do arquivo
+* a última palavra do arquivo contém uma lista com a palavra ''.
 
 Com o dicionario imitador é bastante simples emitir aleatoriamente texto
 que imita o original. Imprima uma palavra, depois veja quais palavras podem
 vir a seguir e pegue uma aleatoriamente como a proxima palavra do texto.
-Use a string vazia como a primeira palavra do texto para preparar as coisas.
-Se caso ficar preso em uma palavra que não está no dicionario, apenas volte
-para a string vazia para manter as coisas em movimento.
 
-PS: o módulo padrão do python 'random' conta com o
-random.choice(list), método que escolhe um elemento aleatório de uma lista
-não vazia.
+Use a string vazia como a primeira palavra do texto para preparar as coisas.
+
+Nota: o módulo padrão do python 'random' conta com o random.choice(list),
+método que escolhe um elemento aleatório de uma lista não vazia.
 """
 
 import random
