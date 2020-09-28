@@ -66,6 +66,12 @@ def print_mimic(mimic_dict, word):
         text = ' '.join([text, word])
     print(text)
 
+    
+def print_word(d, word):
+    next_ = random.choice(d.get(word))
+    print(next_, end=' ')
+    print_word(d, next_)
+
 
 # Chama mimic_dict() e print_mimic()
 def main():
