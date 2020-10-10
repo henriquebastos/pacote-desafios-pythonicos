@@ -3,7 +3,7 @@
 
 Considere dividir uma string em duas metades.
 Caso o comprimento seja par, a metade da frente e de trás tem o mesmo tamanho.
-Caso o comprimento seja impar, o caracter extra fica na metade da frente.
+Caso o comprimento seja ímpar, o caractere extra fica na metade da frente.
 
 Exemplo: 'abcde', a metade da frente é 'abc' e a de trás é 'de'.
 
@@ -15,7 +15,7 @@ def front_back(a, b):
     return
 
 
-# --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
+# --- Daqui para baixo são apenas códigos auxiliares de teste. ---
 
 def test(f, in_, expected):
     """
