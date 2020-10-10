@@ -1,8 +1,8 @@
 """
 01. donuts
 
-Dado um contador inteiro do numero de donuts, retorne uma string
-com o formato 'Number of donuts: <count>' onde <count> é o numero
+Dado um contador inteiro do número de donuts, retorne uma string
+com o formato 'Number of donuts: <count>' onde <count> é o número
 recebido. Entretanto, se o contador for 10 ou mais, use a palavra 'many'
 ao invés do contador.
 Exemplo: donuts(5) retorna 'Number of donuts: 5'
@@ -14,7 +14,7 @@ def donuts(count):
     return
 
 
-# --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
+# --- Daqui para baixo são apenas códigos auxiliares de teste. ---
 
 def test(f, in_, expected):
     """

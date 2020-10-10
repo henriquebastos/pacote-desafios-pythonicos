@@ -7,14 +7,14 @@ crescente com base no último elemento de cada tupla.
 Exemplo: [(1, 7), (1, 3), (3, 4, 5), (2, 2)]
 Irá retornar: [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 
-Dica: Use uma custom key= function para extrair o ultimo elemento de cada tupla.
+Dica: Use uma custom key= function para extrair o último elemento de cada tupla.
 """
 def sort_last(tuples):
     # +++ SUA SOLUÇÃO +++
     return
 
 
-# --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
+# --- Daqui para baixo são apenas códigos auxiliares de teste. ---
 
 def test(f, in_, expected):
     """
