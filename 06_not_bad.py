@@ -10,8 +10,12 @@ Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 """
 
 def not_bad(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    not_str = s.find('not')
+    bad_str = s.find('bad')
+
+    if not_str < bad_str:
+        return s.replace(s[not_str:bad_str + 3], 'good')
+    return s
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
@@ -39,3 +43,4 @@ if __name__ == '__main__':
     test(not_bad, 'This dinner is not that bad!', 'This dinner is good!')
     test(not_bad, 'This tea is not hot', 'This tea is not hot')
     test(not_bad, "It's bad yet not", "It's bad yet not")
+    
