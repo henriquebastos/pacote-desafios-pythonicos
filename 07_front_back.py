@@ -11,14 +11,13 @@ Finalmente, dadas duas strings a e b, retorne uma string na forma:
 a-frente + b-frente + a-trás + b-trás
 """
 def front_back(a, b):
-    
-     a_inicio = a[:len(a)//2] if len(a) % 2 == 0 else a[:(len(a)//2)+1]
-     a_final = a[len(a)//2:] if len(a) % 2 == 0 else a[(len(a)//2)+1:]
+    def inicio (s):
+        return s[:len(s)//2] if len(s) % 2 == 0 else s[:(len(s)//2)+1]
 
-     b_inicio = b[:len(b)//2] if len(b) % 2 == 0 else b[:(len(b)//2)+1]
-     b_final = b[len(b)//2:] if len(b) % 2 == 0 else b[(len(b)//2)+1:]
+    def final (s):
+        return s[len(s)//2:] if len(s) % 2 == 0 else s[(len(s)//2)+1:]
 
-     return a_inicio + b_inicio + a_final + b_final
+    return inicio(a) + inicio(b) + final (a) + final (b)
 
  
 
