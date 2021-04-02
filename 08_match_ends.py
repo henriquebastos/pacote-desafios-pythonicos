@@ -7,7 +7,7 @@ e o último caracteres da cadeia são os mesmos.
 
 PS: Python não possui o operador ++, porém += funciona.
 """
-import math
+
 def match_ends(words):
     size=0
     for word in words:
