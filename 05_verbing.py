@@ -15,9 +15,9 @@ def verbing(s):
     if len(s) < 3:
         return s
     elif 'ing' in s:
-        return s + 'ly'
+        return f'{s}ly'
     else:
-        return s + 'ing'
+        return f'{s}ing'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

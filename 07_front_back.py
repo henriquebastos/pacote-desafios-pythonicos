@@ -14,21 +14,21 @@ def front_back(a, b):
     # +++ SUA SOLUÇÃO +++
     # Even Numbers
     if len(a) % 2 == 0:
-        front_a = a[0:len(a) // 2]
+        front_a = a[:len(a) // 2]
         back_a = a[len(a) // 2:]
-        front_b = b[0:len(b) // 2]
+        front_b = b[:len(b) // 2]
         back_b = b[len(b) // 2:]
     # Odd Numbers
     if len(a) % 2 != 0:
-        front_a = a[0:(len(a) // 2)+1]
+        front_a = a[:(len(a) // 2)+1]
         back_a = a[(len(a) // 2)+1:]
-        front_b = b[0:(len(b) // 2)+1]
+        front_b = b[:(len(b) // 2)+1]
         back_b = b[(len(b) // 2)+1:]
-    # Even and Odd Numbers    
+    # Even and Odd Numbers
     if len(a) % 2 == 0 and len(b) % 2 != 0:
-        front_a = a[0:len(a) // 2]
+        front_a = a[:len(a) // 2]
         back_a = a[len(a) // 2:]
-        front_b = b[0:(len(b) // 2)+1]
+        front_b = b[:(len(b) // 2)+1]
         back_b = b[(len(b) // 2)+1:]
     return front_a + front_b + back_a + back_b 
 

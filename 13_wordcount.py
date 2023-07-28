@@ -57,7 +57,7 @@ import sys
 # +++ SUA SOLUÇÃO +++
 # Defina as funções print_words(filename) e print_top(filename).
 def print_words(filename):
-    counts = dict()
+    counts = {}
     words = open(filename)
     for line in words:
         line = line.lower()
@@ -69,7 +69,7 @@ def print_words(filename):
 
 
 def print_top(filename):
-    counts = dict()
+    counts = {}
     words = open(filename)
     for line in words:
         line = line.lower()
@@ -94,7 +94,7 @@ def main():
     elif option == '--topcount':
         print_top(filename)
     else:
-        print('unknown option: ' + option)
+        print(f'unknown option: {option}')
         sys.exit(1)
 
 

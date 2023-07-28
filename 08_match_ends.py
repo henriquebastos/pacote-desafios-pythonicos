@@ -9,15 +9,8 @@ PS: Python não possui o operador ++, porém += funciona.
 """
 
 def match_ends(words):
-    # +++ SUA SOLUÇÃO +++
-    results = []
-    matches = []
-    for word in words:
-        if len(word) >= 2:
-            results.append(word)
-    for result in results:
-        if result[0] == result[-1]:
-            matches.append(result)
+    results = [word for word in words if len(word) >= 2]
+    matches = [result for result in results if result[0] == result[-1]]
     return len(matches)
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

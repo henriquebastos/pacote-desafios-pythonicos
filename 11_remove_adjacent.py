@@ -12,9 +12,7 @@ def remove_adjacent(nums):
     # +++ SUA SOLUÇÃO +++
     r = []
     for n in nums:
-        if n in r:
-            pass
-        else:
+        if n not in r:
             r.append(n)
         if n is not r[-1]:
             r.append(n)
