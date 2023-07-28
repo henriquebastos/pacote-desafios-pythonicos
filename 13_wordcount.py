@@ -68,6 +68,18 @@ def print_words(filename):
         print(k,v)
 
 
+def print_top(filename):
+    counts = dict()
+    words = open(filename)
+    for line in words:
+        line = line.lower()
+        line = line.rstrip().split()
+        for item in line:
+            counts[item] = counts.get(item, 0) + 1
+    for k, v in sorted(counts.items(), key=lambda x: x[1], reverse=True):
+        print(k,v)
+
+
 # A função abaixo chama print_words() ou print_top() de acordo com os
 # parêtros do programa.
 def main():
